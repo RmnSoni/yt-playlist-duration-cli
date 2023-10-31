@@ -6,12 +6,15 @@ from src.yt_api import apiCall
 
 def main():
 #---parsing input
-    url = sys.argv
-    if len(url)<2: 
-        print("ERROR: No URL Entered")
-        return
+    inp = sys.argv
+    url=""
+    while len(inp)<2 and not url: 
+        print("WAIT: No URL Entered")
+        url=input("Enter URL:")
+    if url=="": 
+        url=inp[1]
 #---fetch playlistID from URL
-    pl_id=retrieve_pl_id(url[1])
+    pl_id=retrieve_pl_id(url)
 
 #---fetch all the data for this playlist
     api_result_durations = apiCall(pl_id)
