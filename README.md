@@ -2,7 +2,7 @@
 
 This Python project calculates the total duration of a YouTube playlist based on the provided URL. It utilizes the YouTube Data API to fetch information about the playlist and the videos it contains. The project also uses the `dotenv` and `isodate` Python modules for managing environment variables and parsing video durations, respectively.
 
-![](https://imgur.com/a/1GhP74h)
+![Working Example](https://imgur.com/CFtjzHi.png)
 
 ## Dependencies
 
